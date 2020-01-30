@@ -1,0 +1,84 @@
+<!-- Naming Convention Used: BEM (https://css-tricks.com/bem-101/) w/ camelCase  -->
+
+<!-- File & Folder Convention Used: 7-1 Pattern (https://sass-guidelin.es/#the-7-1-pattern) w/ camelCase  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Contact Willow</title>
+    <script src="https://kit.fontawesome.com/57818ef07c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER BEGINS -->
+    <header>
+        <nav class="topNavigation">
+            <div class="wrapper">
+                <ul class="topNavigation__list">
+                    <li class="topNavigation__item">
+                        <a href="index.html" class="topNavigation__link">Home</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="index.html#about" class="topNavigation__link">About</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="#" class="topNavigation__link">Willow</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="willowBlogPost.html" class="topNavigation__link">Blog</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="#" class="topNavigation__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2>Contact Me</h2>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- MAIN SECTION BEGINS -->
+    <form action="submit" class="submitContactForm">
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Name">
+        <label for="email">Email address</label>
+        <input type="email" name="email" id="email" placeholder="Email address">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <button type="submit">Submit</button>
+    </form>
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- ASIDE BEGINS -->
+    <ul class="socialMediaIcons">
+        <li class="socialMediaIcons__item">
+            <a href="#" class="socialMediaIcons__iconLink"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li class="socialMediaIcons__item">
+            <a href="#" class="socialMediaIcons__iconLink"><i class="fab fa-twitter"></i></a>
+        </li>
+        <li class="socialMediaIcons__item">
+            <a href="#" class="socialMediaIcons__iconLink"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li class="socialMediaIcons__item">
+            <a href="#" class="socialMediaIcons__iconLink"><i class="fab fa-instagram"></i></a>
+        </li>
+    </ul>
+    <a href="mailto:info@email.com"><p>info@email.com</p></a>
+    <p>123 - 456 - 7890 <br/>
+    123 Queen Street West, Unit 10 <br/>
+    Toronto, Ontario </br>
+    M5V2D5</p>
+    <!-- ASIDE ENDS -->
+
+    <!-- FOOTER BEGINS -->
+    <footer>
+        <p>Copyright &copy; 2018 HackerYou</p>
+    </footer>
+    <!-- FOOTER ENDS -->
+</body>
+</html>

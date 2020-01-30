@@ -1,0 +1,157 @@
+<!-- Naming Convention Used: BEM (https://css-tricks.com/bem-101/) w/ camelCase  -->
+
+<!-- File & Folder Convention Used: 7-1 Pattern (https://sass-guidelin.es/#the-7-1-pattern) w/ camelCase  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Willow</title>
+    <script src="https://kit.fontawesome.com/57818ef07c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER BEGINS -->
+    <header>
+        <nav class="topNavigation">
+            <div class="wrapper">
+                <ul class="topNavigation__list">
+                    <li class="topNavigation__item">
+                        <a href="#" class="topNavigation__link">Home</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="#about" class="topNavigation__link">About</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="#" class="topNavigation__link">Willow</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="willowBlogPost.html" class="topNavigation__link">Blog</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="willowContact.html" class="topNavigation__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wrapper">
+            <h1>Willow</h1>
+            <img src="./willowAssets/home-image-1.jpg" alt="photo of Willow in a mustard yellow jacket with palm leaves in the background" class="mainProfilePhoto">
+        </div>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <!-- MAIN SECTION BEGINS -->
+    <main>
+        <!-- whoseWillow SECTION BEGINS -->
+        <section class="whoseWillow">
+            <div class="wrapper">
+                <h3 id="about">Who's Willow?</h3>
+                <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor.</p>
+                <button>Find out more</button>
+            </div>
+        </section>
+        <!-- whoseWillow SECTION ENDS -->
+        <!-- favouriteAndBucket SECTION BEGINS -->
+        <section class="favouriteAndBucket">
+            <div class="wrapper">
+                <section class="favouriteThings">
+                    <div class="favouriteThings__box ftImg">
+                        <img src="./willowAssets/home-image-2.jpg" alt="white bridge in front of a waterfall, white light shining down from sky behind bridge">
+                    </div>
+                    <div class="favouriteThings__box ftText">
+                        <h4>Favourite Things</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at.</p>
+                        <button>Read more</button>
+                    </div>
+                </section>
+                <section class="bucketList">
+                    <div class="bucketList__box blImg">
+                        <img src="./willowAssets/home-image-3.jpg" alt="bluish-white waterlily on water with reflection and lilypads behind it">
+                    </div>
+                    <div class="bucketList___box blText">
+                        <h4>Bucket List</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et risus nec orci ornare condimentum. Nam suscipit odio lorem, id vestibulum lacus tristique eu. Sed urna ex, porttitor nec iaculis at.</p>
+                        <button>Read more</button>
+                    </div>
+                </section>
+            </div>
+        </section>
+        <!-- favouriteAndBucket SECTION ENDS -->
+        <!-- willowsJourney SECTION BEGINS -->
+        <section class="willowsJourney">
+            <div class="wrapper">
+                <div class="willowsJourneyContainer">
+                    <div class="willowsJourneyContainer__box wjImg">
+                        <img src="./willowAssets/home-image-4.jpg" alt="Willow entering a leafy garden wearing a mustard yellow jacket">
+                    </div>
+                    <div class="willowsJourneyContainer__box wjText">
+                        <h3>Willow's Journey</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus. Quisque interdum orci quis convallis dapibus nulla pulvinar tortor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla pulvinar tortor nulla elementum eleifend. Vestibulum consequat vestibulum felis pharetra luctus.</p>
+                        <button>Find out more</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- willowsJourney SECTION ENDS -->
+        <!-- fullWidthMeadowImage SECTION BEGINS-->
+        <section class="fullWidthMeadowImage">
+            <img src="./willowAssets/home-image-5.jpg" alt="yellow house at the end of a grassy meadow, with mountains and mist in the background">
+        </section>
+        <!-- fullWidthMeadowImage SECTION ENDS -->
+        <!-- threeImageGallery SECTION BEGINS -->
+        <section class="threeImageGallery">
+            <div class="wrapper">
+                <ul class="threeImageContainer">
+                    <li class="threeImageContainer__box">
+                        <img src="./willowAssets/home-image-6.jpg" alt="road leading to a misty bend at the end">
+                    </li>
+                    <li class="threeImageContainer__box">
+                        <img src="./willowAssets/home-image-7.jpg" alt="bowl of whole citrus fruit and bowl of sliced citrus fruit in the corner">
+                    </li>
+                    <li class="threeImageContainer__box">
+                        <img src="./willowAssets/home-image-8.jpg" alt="stairs in front of a dark wall with gold pattern">
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- threeImageGallery SECTION ENDS -->
+        <!-- additionalLinks SECTION BEGINS -->
+        <section class="additionalLinks">
+            <div class="wrapper">
+                <div class="topHalf">
+                    <div class="topHalf__box">
+                        <h4>Photos</h4>
+                        <p>Ut felis</p>
+                    </div>
+                    <div class="topHalf__box">
+                        <h4>About</h4>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
+                </div>
+                <div class="bottomHalf">
+                    <div class="bottomHalf__box">
+                        <h4>Blog</h4>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
+                    <div class="bottomHalf__box">
+                        <h4>Contact Me</h4>
+                        <p>Ut felis eros, vehicula eu magna nec, laoreet blandit nisi. Fusce auctor erat ac sagittis mattis. Mauris tempus velit sem, sit amet imperdiet dolor placerat et.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- additionalLinks SECTION ENDS -->
+    </main>
+    <!-- MAIN SECTION ENDS -->
+
+    <!-- FOOTER BEGINS -->
+    <footer>
+        <p>Copyright &copy; 2018 HackerYou</p>
+    </footer>
+    <!-- FOOTER ENDS -->
+</body>
+</html>

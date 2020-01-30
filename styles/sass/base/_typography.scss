@@ -1,0 +1,25 @@
+@import '../abstracts/mixins';
+
+html {
+    font-size: 62.5%;
+}
+
+h2 {
+    @include headingTextBlogAndNewsContactMe;
+}
+
+h3 {
+    @include headingTextWhosWillowWillowsJourney;
+}
+
+h4 {
+    @include headingTextFavouriteThingsPhotosAbout; 
+} 
+
+h5 {
+    @include headingTextAboutWillowRecentPosts;
+}
+
+p {
+    @include bodyText; 
+}

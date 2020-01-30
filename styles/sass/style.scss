@@ -1,0 +1,27 @@
+/* Naming Convention Used: BEM (https://css-tricks.com/bem-101/) w/ camelCase */ 
+
+/* File & Folder Convention Used: 7-1 Pattern (https://sass-guidelin.es/#the-7-1-pattern) w/ camelCase */ 
+
+// abtracts
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// vendors
+
+// base
+@import 'base/setup';
+@import 'base/reset';
+@import 'base/typography';
+@import 'base/images';
+
+// layout
+@import 'layout/wrapper';
+@import 'layout/footer';
+
+// components
+@import 'components/accessibility';
+
+// pages
+@import 'pages/home';
+
+// themes

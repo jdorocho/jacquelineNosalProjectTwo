@@ -1,0 +1,135 @@
+<!-- Naming Convention Used: BEM (https://css-tricks.com/bem-101/) w/ camelCase  -->
+
+<!-- File & Folder Convention Used: 7-1 Pattern (https://sass-guidelin.es/#the-7-1-pattern) w/ camelCase  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Montserrat:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Blog and News</title>
+    <script src="https://kit.fontawesome.com/57818ef07c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER BEGINS -->
+    <header>
+        <nav class="topNavigation">
+            <div class="wrapper">
+                <ul class="topNavigation__list">
+                    <li class="topNavigation__item">
+                        <a href="index.html" class="topNavigation__link">Home</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="index.html#about" class="topNavigation__link">About</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="#" class="topNavigation__link">Willow</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="#" class="topNavigation__link">Blog</a>
+                    </li>
+                    <li class="topNavigation__list">
+                        <a href="willowContact.html" class="topNavigation__link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <h2>Blog &amp; News</h2>
+    </header>
+    <!-- HEADER ENDS -->
+
+    <section class="midPortion">
+        <div class="wrapper">
+            <!-- ARTICLE BEGINS -->
+            <article>
+                <h4>My favourite travel destinations</h4>
+                <p>Monday October 8th, 2018 by Willow</p>
+                <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maescenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit. Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincidunt turpis sed dui aliquam vehicula. Praesent nec elit non dolor consectetur tincidunt sed in felis. Donec elementum, lacus at mattis tincidunt, eros magna faucibus sem, in condimentum est augue tristique risus.</p>
+                <p>Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulum nec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maescenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Nam consectetur ante at nisl hendrerit gravida. Donec vehicula rhoncus mattis.</p>
+            </article>
+            <!-- ARTICLE ENDS -->
+
+            <!-- ASIDE #1 BEGINS -->
+            <aside class="aboutWillow">
+                <div class="aboutWillowContainer">
+                    <div class="aboutWillowContainer__box awImg">
+                        <img src="./willowAssets/blog-image-2.jpg" alt="photo of Willow looking at camera, palm leaf covering half her face">
+                    </div>
+                    <div class="aboutWillowContainer__box awText">
+                        <h5>About Willow</h5>
+                        <p>Lorem ipusm nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="index.html" class="aboutWillowContainer__link">Find out more.</a></p>
+                    </div>
+                </div>
+            </aside>
+            <!-- ASIDE #1 ENDS -->
+
+            <!-- ASIDE #2 BEGINS -->
+            <aside class="recentPosts">
+                <h5>Recent Posts</h5>
+                <ul class="recentPosts__list">
+                    <li class="recentPosts__item">
+                        <p class="recentPosts__text">Donec facilisis tortor ut</p>
+                    </li>
+                    <li class="recentPosts__item">
+                        <p class="recentPosts__text">Augue lacinia at viverra</p>
+                    </li>
+                    <li class="recentPosts__item">
+                        <p class="recentPosts__text">Semper sed sapien metus</p>
+                    </li>
+                    <li class="recentPosts__item">
+                        <p class="recentPosts__text">Scelerisque nec pharetra id</p>
+                    </li>
+                </ul>
+            </aside>
+            <!-- ASIDE #2 ENDS -->
+
+            <!-- COMMENTS SECTION BEGINS -->
+            <section class="comments">
+                <section class="commentsContainer">
+                    <div class="commentsContainer__box commentOne">
+                        <div class="commentsContainer__image">
+                            <img src="willowAssets/blog-image-3.jpg" alt="person with long brown hair wearing black hat tucking hair behind their ear">
+                        </div>
+                        <div class="commentsContainer__text">
+                            <p>Tuesday October 9th, 2018 by Barb</p>
+                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maescenas eu varius risus, eu aliquet arcu.</p>
+                        </div>
+                    </div>
+                    <div class="commentsContainer__box commentTwo">
+                        <div class="commentsContainer__image">
+                            <img src="willowAssets/blog-image-4.jpg" alt="person smiling into the distance">
+                        </div>
+                        <div class="commentsContainer__text">
+                            <p>Wednesday October 10th, 2018 by Daisy</p>
+                            <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerique ligula. Maescenas eu varius risus eu aliquet arcu.</p>
+                        </div>
+                    </div>
+                </section>
+                <form action="submit" class="submitCommentForm">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+                    <label for="comment">Comment</label>
+                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
+                    <button type="submit">Post comment</button>
+                </form>
+            </section>
+            <!-- COMMENTS SECTION ENDS -->
+        </div>
+    </section>
+
+    <!-- FOOTER BEGINS -->
+    <footer>
+        <p>Copyright &copy; 2018 HackerYou</p>
+    </footer>
+    <!-- FOOTER ENDS -->
+</body>
+</html>
