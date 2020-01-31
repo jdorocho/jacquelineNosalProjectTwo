@@ -410,3 +410,7 @@ h1 {
 .whoseWillow__text, .whoseWillow__button {
   margin-top: 30px;
 }
+
+.fullWidthMeadow__img {
+  width: 100%;
+}
