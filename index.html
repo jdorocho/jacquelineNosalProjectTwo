@@ -14,32 +14,35 @@
     <script src="https://kit.fontawesome.com/57818ef07c.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <!-- HEADER BEGINS -->
-    <header>
-        <nav class="topNavigation">
-            <div class="wrapper">
-                <ul class="topNavigation__list">
-                    <li class="topNavigation__item">
-                        <a href="#" class="topNavigation__link">Home</a>
-                    </li>
-                    <li class="topNavigation__list">
-                        <a href="#about" class="topNavigation__link">About</a>
-                    </li>
-                    <li class="topNavigation__list">
-                        <a href="#" class="topNavigation__link">Willow</a>
-                    </li>
-                    <li class="topNavigation__list">
-                        <a href="willowBlogPost.html" class="topNavigation__link">Blog</a>
-                    </li>
-                    <li class="topNavigation__list">
-                        <a href="willowContact.html" class="topNavigation__link">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <!-- topNavBar BEGINS -->
+    <nav class="topNavBar">
         <div class="wrapper">
-            <h1>Willow</h1>
-            <img src="./willowAssets/home-image-1.jpg" alt="photo of Willow in a mustard yellow jacket with palm leaves in the background" class="mainProfilePhoto">
+            <ul class="topNavBar__list">
+                <li class="topNavBar__item">
+                    <a href="#" class="topNavBar__link">Home</a>
+                </li>
+                <li class="topNavBar__item">
+                    <a href="#about" class="topNavBar__link">About</a>
+                </li>
+                <li class="topNavBar__item">
+                    <a href="#" class="topNavBar__link">Willow</a>
+                </li>
+                <li class="topNavBar__item">
+                    <a href="willowBlogPost.html" class="topNavBar__link">Blog</a>
+                </li>
+                <li class="topNavBar__item">
+                    <a href="willowContact.html" class="topNavBar__link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- topNavBar ENDS -->
+    <!-- HEADER BEGINS -->
+    <header class="homeHeader">
+        <div class="wrapper homeHeaderWrapper">
+            <img src="./willowAssets/circle-text.png" alt="Text that says 'Daily Musings Of'" class="homeHeaderWrapper__circleImg">
+            <h1 class="homeHeaderWrapper__title">Willow</h1>
+            <img src="./willowAssets/home-image-1.jpeg" alt="photo of Willow in a mustard yellow jacket with palm leaves in the background" class="homeHeaderWrapper__mainProfileImg">
         </div>
     </header>
     <!-- HEADER ENDS -->
@@ -48,8 +51,8 @@
     <main>
         <!-- whoseWillow SECTION BEGINS -->
         <section class="whoseWillow">
-            <div class="wrapper">
-                <h3 id="about">Who's Willow?</h3>
+            <div class="wrapper whoseWillowWrapper">
+                <h3 id="about" class="whoseWillowWrapper__title">Who's Willow?</h3>
                 <p>Cras quis nulla commodo, aliquam lectus sed, blandit augue. Cras ullamcorper bibendum bibendum. Duis tincidunt urna non pretium porta. Nam condimentum vitae ligula vel ornare. Phasellus at semper turpis. Nunc eu tellus tortor. Etiam at condimentum nisl, vitae sagittis orci. Donec id dignissim nunc. Donec elit ante, eleifend a dolor et, venenatis facilisis dolor.</p>
                 <button>Find out more</button>
             </div>

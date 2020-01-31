@@ -16,10 +16,13 @@
 
 // layout
 @import 'layout/wrapper';
+@import 'layout/topNavBar';
+@import 'layout/header';
 @import 'layout/footer';
 
 // components
 @import 'components/accessibility';
+@import 'components/buttons'; 
 
 // pages
 @import 'pages/home';
