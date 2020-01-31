@@ -5,7 +5,6 @@ h1 {
     letter-spacing: 0.1rem;
     text-transform: uppercase;
     color: $whiteShade;
-    // border: 1px solid pink;
     position: absolute;
     top: 55px;
     left: 60px;
@@ -14,25 +13,22 @@ h1 {
 .homeHeader {
     background-color: $pine;
     padding: 300px 0 285px 0;
-}
-
-.homeHeaderWrapper {
-    position: relative;
-    // border: 1px solid aqua;
-    // &__title::before {
-    //     content: '';
-    //     background-image: url('./willowAssets/circle-text.png');
-    //     display: block;
-    //     background-size: auto;
-    //     position: absolute;
-    // }
-    &___circleImg {
-        display: inline-block;
-        border: 1px solid red;
+    &__wrapper {
+        position: relative;
     }
     &__mainProfileImg {
-        position: absolute;
-        top: -180px;
-        right: 0;
+            position: absolute;
+            top: -180px;
+            right: 0;
     }
 }
+
+.whoseWillow {
+    background-color: #F6F6F6;
+    text-align: center;
+    padding: 120px 0 160px 0;
+    &__text, 
+    &__button {
+        margin-top: 30px;
+    }
+} 

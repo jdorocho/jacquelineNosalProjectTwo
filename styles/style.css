@@ -391,17 +391,22 @@ h1 {
   padding: 300px 0 285px 0;
 }
 
-.homeHeaderWrapper {
+.homeHeader__wrapper {
   position: relative;
 }
 
-.homeHeaderWrapper___circleImg {
-  display: inline-block;
-  border: 1px solid red;
-}
-
-.homeHeaderWrapper__mainProfileImg {
+.homeHeader__mainProfileImg {
   position: absolute;
   top: -180px;
   right: 0;
+}
+
+.whoseWillow {
+  background-color: #F6F6F6;
+  text-align: center;
+  padding: 120px 0 160px 0;
+}
+
+.whoseWillow__text, .whoseWillow__button {
+  margin-top: 30px;
 }
