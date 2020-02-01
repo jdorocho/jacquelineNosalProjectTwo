@@ -33,14 +33,6 @@ h1 {
     }
 } 
 
-.favouriteThings {
-    border: 1px solid blue;
-}
-
-.bucketList {
-    border: 1px solid fuchsia;
-}
-
 .fullWidthMeadow {
     &__img {
         width: 100%;
@@ -52,15 +44,14 @@ h1 {
     position: relative;
     &__box {
         width: 50%;
-        padding: 85px;
-        border: 2px dotted lavender;
+        padding: 85px 10px 85px 85px;
         position: relative;
-    }
+    } 
     &__image {
         position: absolute;
-        top: -50px;
+        top: -55px;
         right: 20px;
-        box-shadow: 20px 20px 0 0 $greenGrey, -150px 20px 0 0 $greenGrey;
+        box-shadow: 18px 18px 0 0 $greenGrey, -150px 18px 0 0 $greenGrey;
     }
     &__paragraph,
     &__button {
@@ -75,16 +66,15 @@ h1 {
     &__box {
         text-align: right;
         width: 50%;
-        padding: 0 100px 100px 100px;
-        border: 2px dotted rosybrown;
+        padding: 0 85px 85px 10px;
         position: relative;
     }
-    &__title {
-        margin-top: 30px;
-    }
+    // &__title {
+    //     margin-top: 30px;
+    // }
     &__image {
         position: absolute;
-        bottom: -30px;
+        // bottom: -30px;
         left: 0;
         box-shadow: 20px 20px 0 0 $pine, 150px 20px 0 0 $pine;
     }
@@ -96,16 +86,71 @@ h1 {
 
 .willowsJourney {
     background-color: $whiteShade;
+    padding: 145px 0 85px 0;
     &__container {
         display: flex;
     }
-    &__imgBox {
-        width: 40%;
-        border: 1px solid orange;
+    &__imgBox{
+        width: 35%;
     }
     &__textBox {
-        width: 60%;
-        border: 1px solid purple;
+        width: 65%;
+    }
+    &__paragraph, 
+    &__button {
+        margin-top: 30px;
+    }
+    &__imgBox img {
+        box-shadow: 15px 15px 0 0 $greenGrey;
+    }
+}
+
+.threeImageGallery {
+    &__container {
+        display: flex;
+        padding: 95px 0;
+    }
+    &__box {
+        width: calc((100% - 40px) / 3);
+        margin: 0 20px;
+    }
+    &__box:first-child {
+        margin-left: 0;
+    }
+    &__box:last-child {
+        margin-right: 0;
+    }
+}
+
+.additionalLinks {
+    background-color: $whiteShade; 
+    padding: 100px 0; 
+    &__topHalf, 
+    &__bottomHalf {
+        display: flex;
+    }
+    &__bottomHalf {
+        margin-top: 50px;
+    }
+    &__box {
+        width: 50%;
+        display: flex; 
+    }
+    &__circle {
+        border: 1px solid pink;
+        background-color: $accent;
+        border-radius: 50%;
+        padding: 15px;
+    }
+    &__textBox {
+        margin-left: 20px;
+        padding-right: 10px;
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__box i {
+        font-size: 20px; 
     }
 }
 
