@@ -411,6 +411,95 @@ h1 {
   margin-top: 30px;
 }
 
+.favouriteThings {
+  border: 1px solid blue;
+}
+
+.bucketList {
+  border: 1px solid fuchsia;
+}
+
 .fullWidthMeadow__img {
   width: 100%;
+}
+
+.favouriteThings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.favouriteThings__box {
+  width: 50%;
+  padding: 85px;
+  border: 2px dotted lavender;
+  position: relative;
+}
+
+.favouriteThings__image {
+  position: absolute;
+  top: -50px;
+  right: 20px;
+  -webkit-box-shadow: 20px 20px 0 0 #709B6B, -150px 20px 0 0 #709B6B;
+          box-shadow: 20px 20px 0 0 #709B6B, -150px 20px 0 0 #709B6B;
+}
+
+.favouriteThings__paragraph, .favouriteThings__button {
+  margin-top: 30px;
+}
+
+.bucketList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  position: relative;
+}
+
+.bucketList__box {
+  text-align: right;
+  width: 50%;
+  padding: 0 100px 100px 100px;
+  border: 2px dotted rosybrown;
+  position: relative;
+}
+
+.bucketList__title {
+  margin-top: 30px;
+}
+
+.bucketList__image {
+  position: absolute;
+  bottom: -30px;
+  left: 0;
+  -webkit-box-shadow: 20px 20px 0 0 #345231, 150px 20px 0 0 #345231;
+          box-shadow: 20px 20px 0 0 #345231, 150px 20px 0 0 #345231;
+}
+
+.bucketList__paragraph, .bucketList__button {
+  margin-top: 30px;
+}
+
+.willowsJourney {
+  background-color: #F6F6F6;
+}
+
+.willowsJourney__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.willowsJourney__imgBox {
+  width: 40%;
+  border: 1px solid orange;
+}
+
+.willowsJourney__textBox {
+  width: 60%;
+  border: 1px solid purple;
 }
