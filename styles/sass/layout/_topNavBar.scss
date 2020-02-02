@@ -1,5 +1,6 @@
 .topNavBar {
     background-color: $pine;
+    border: none;
     width: 100%;
     padding: 24px 0;
     position: fixed;
@@ -23,7 +24,46 @@
         position: relative;
         top: -5px;
     }
-    &__link:hover {
+    &__hamburgerButton,
+    &__exitButton {
+        display: none;
+        position: absolute;
+        top: 15px;
+        right: 0;
+        cursor: pointer;
+    }
+    &__dropdown {
+        display: none;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    &__dropdownLink {
+        @include menuTextHomeAbout; 
+        color: $whiteShade;
+    }
+    &__link:hover, 
+    &__dropdownLink:hover {
         color: $accent;
     }
+    @media (max-width: 970px){
+        padding: 40px 0;
+        &__list {
+            display: none;
+        }
+    }
 }
+
+.border.topNavBar {
+    border-bottom: 5px solid $greenGrey;
+}
+
+.show.topNavBar__exitButton {
+    display: block;
+}
+
+@media (max-width: 970px) {
+    .show.topNavBar__hamburgerButton {
+        display: block;
+    }
+}
+
