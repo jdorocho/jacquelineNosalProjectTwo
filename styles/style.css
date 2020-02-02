@@ -430,11 +430,17 @@ button {
   background-color: #E4A436;
   text-transform: uppercase;
   padding: 10px 30px;
+  cursor: pointer;
   font-family: 'Abril Fatface', cursive;
   font-size: 2.0rem;
   letter-spacing: 0.1rem;
   line-height: 3.2rem;
   text-align: center;
+}
+
+button:hover {
+  background-color: #709B6B;
+  color: #F6F6F6;
 }
 
 input,
@@ -463,6 +469,12 @@ h1 {
   position: absolute;
   top: 55px;
   left: 60px;
+}
+
+@media (max-width: 555px) {
+  main p {
+    font-size: 1.6rem;
+  }
 }
 
 .homeHeader {
@@ -573,7 +585,6 @@ h1 {
 
 @media (max-width: 555px) {
   .whoseWillow__text {
-    font-size: 1.6rem;
     margin: 30px 30px 0 30px;
   }
 }
@@ -840,9 +851,27 @@ h1 {
   bottom: -15px;
 }
 
+@media (max-width: 575px) {
+  .blogAndNewsHeader__title {
+    font-size: 6.0rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .blogAndNewsHeader__title {
+    font-size: 4.2rem;
+  }
+}
+
 .midPortion {
   background-color: #F6F6F6;
   padding: 85px 0;
+}
+
+@media (max-width: 555px) {
+  .midPortion p {
+    font-size: 1.6rem;
+  }
 }
 
 .blogMidPortionTopHalf,
@@ -868,6 +897,21 @@ h1 {
   width: 60%;
 }
 
+@media (max-width: 930px) {
+  .blogMidPortionTopHalf {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogMidPortionTopHalf__leftSideTop {
+    width: 100%;
+  }
+  .blogMidPortionTopHalf__rightSideTop {
+    width: 100%;
+  }
+}
+
 .blogMidPortionBottomHalf__leftSideBottom {
   width: 40%;
   margin-right: 40px;
@@ -875,6 +919,15 @@ h1 {
 
 .blogMidPortionBottomHalf__rightSideBottom {
   width: 60%;
+}
+
+@media (max-width: 930px) {
+  .blogMidPortionBottomHalf__leftSideBottom {
+    display: none;
+  }
+  .blogMidPortionBottomHalf__rightSideBottom {
+    width: 100%;
+  }
 }
 
 .favouriteTravelDestinations {
@@ -885,6 +938,12 @@ h1 {
   margin-top: 20px;
 }
 
+@media (max-width: 930px) {
+  .favouriteTravelDestinations {
+    margin-top: 20px;
+  }
+}
+
 .aboutWillow__title, .aboutWillow__text {
   margin-top: 20px;
 }
@@ -892,6 +951,33 @@ h1 {
 .aboutWillow__link {
   color: #709B6B;
   font-weight: 700;
+}
+
+.aboutWillow__link:hover {
+  color: #E4A436;
+}
+
+@media (max-width: 930px) {
+  .aboutWillow__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutWillow__imageBox {
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 430px) {
+  .aboutWillow__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutWillow__imageBox {
+    margin: 0 auto;
+  }
 }
 
 .recentPosts {
@@ -910,6 +996,12 @@ h1 {
 .recentPosts__text {
   display: inline;
   vertical-align: middle;
+}
+
+@media (max-width: 930px) {
+  .recentPosts {
+    text-align: center;
+  }
 }
 
 .comments__list {
@@ -936,6 +1028,12 @@ h1 {
 .comments__textOne, .comments__textTwo {
   width: 80%;
   padding: 30px 30px 30px 0;
+}
+
+@media (max-width: 545px) {
+  .comments__imageOne, .comments__imageTwo {
+    padding: 10px;
+  }
 }
 
 .submitCommentForm {
@@ -972,8 +1070,19 @@ h1 {
   width: 100%;
 }
 
-.contactFormBody {
-  min-height: 100vh;
+@media (max-width: 545px) {
+  .submitCommentForm__partOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .submitCommentForm__email {
+    margin-top: 20px;
+  }
+  .submitCommentForm__name, .submitCommentForm__email {
+    width: 100%;
+  }
 }
 
 .contactHeader {
@@ -987,6 +1096,18 @@ h1 {
   color: #F6F6F6;
   position: relative;
   bottom: -15px;
+}
+
+@media (max-width: 575px) {
+  .contactHeader__title {
+    font-size: 6.0rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .contactHeader__title {
+    font-size: 4.2rem;
+  }
 }
 
 .mainPortionContact p, .mainPortionContact input, .mainPortionContact textarea {
@@ -1011,6 +1132,28 @@ h1 {
 
 .mainPortionContact__rightSide {
   width: 70%;
+}
+
+@media (max-width: 815px) {
+  .mainPortionContact__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainPortionContact__leftSide {
+    text-align: center;
+    width: 100%;
+  }
+  .mainPortionContact__rightSide {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 430px) {
+  .mainPortionContact__rightSide {
+    width: 100%;
+  }
 }
 
 .contactInfo {
@@ -1041,6 +1184,16 @@ h1 {
 
 .contactInfo__address {
   margin-top: 10px;
+}
+
+.contactInfo__iconLink:hover {
+  color: #E4A436;
+}
+
+@media (max-width: 815px) {
+  .contactInfo__socialList {
+    margin: 0 auto;
+  }
 }
 
 .contactForm {
@@ -1074,4 +1227,17 @@ h1 {
 
 .contactForm__messageBox, .contactForm__submitButton {
   width: 100%;
+}
+
+@media (max-width: 815px) {
+  .contactForm__partOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactForm__name, .contactForm__email {
+    width: 100%;
+    margin-top: 20px;
+  }
 }

@@ -10,6 +10,14 @@ h1 {
     left: 60px;
 }
 
+main {
+    @media (max-width: 555px) {
+        & p {
+            font-size: 1.6rem;
+        }
+    }
+}
+
 .homeHeader {
     background-color: $pine;
     padding: 300px 0 285px 0;
@@ -103,7 +111,6 @@ h1 {
     }
     @media (max-width: 555px) {
         &__text {
-            font-size: 1.6rem;
             margin: 30px 30px 0 30px;
         }
     }

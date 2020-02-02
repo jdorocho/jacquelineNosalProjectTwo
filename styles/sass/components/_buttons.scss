@@ -2,6 +2,12 @@ button {
     background-color: $accent;
     text-transform: uppercase;
     padding: 10px 30px;
+    cursor: pointer;
 
     @include buttonText;
+}
+
+button:hover {
+    background-color: $greenGrey;
+    color: $whiteShade;
 }

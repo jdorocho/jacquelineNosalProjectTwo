@@ -8,11 +8,26 @@
         position: relative;
         bottom: -15px;
     }
+    @media (max-width: 575px) {
+        &__title {
+            font-size: 6.0rem;
+        }
+    }
+    @media (max-width: 430px) {
+        &__title {
+            font-size: 4.2rem;
+        }
+    }
 }
 
 .midPortion {
     background-color: $whiteShade;
     padding: 85px 0; 
+    @media (max-width: 555px) {
+        & p {
+            font-size: 1.6rem;
+        }
+    }
 }
 
 .blogMidPortionTopHalf,
@@ -35,6 +50,15 @@
     &__rightSideTop {
         width: 60%;
     }
+    @media (max-width: 930px) {
+        flex-direction: column;
+        &__leftSideTop {
+            width: 100%;
+        }
+        &__rightSideTop {
+            width: 100%;
+        }
+    }
 }
 
 .blogMidPortionBottomHalf {
@@ -45,12 +69,23 @@
     &__rightSideBottom {
         width: 60%;
     }
+    @media (max-width: 930px) {
+        &__leftSideBottom {
+            display: none;
+        }
+        &__rightSideBottom {
+            width: 100%;
+        }
+    }
 }
 
 .favouriteTravelDestinations {
     border-bottom: 5px solid $greenGrey;
     &__title, 
     &__text {
+        margin-top: 20px;
+    }
+    @media (max-width: 930px) {
         margin-top: 20px;
     }
 }
@@ -63,6 +98,25 @@
     &__link {
         color: $greenGrey;
         font-weight: 700;
+    }
+    &__link:hover {
+        color: $accent;
+    }
+    @media (max-width: 930px) {
+        &__container {
+            display: flex;
+        }
+        &__imageBox {
+            margin-right: 30px;
+        }
+    }
+    @media (max-width: 430px) {
+        &__container {
+            flex-direction: column;
+        }
+        &__imageBox {
+            margin: 0 auto;
+        }
     }
 }
 
@@ -78,6 +132,9 @@
     &__text {
         display: inline;
         vertical-align: middle; 
+    }
+    @media (max-width: 930px) {
+        text-align: center;
     }
 }
 
@@ -104,13 +161,19 @@
         width: 80%;
         padding: 30px 30px 30px 0;
     }
+    @media (max-width: 545px) {
+        &__imageOne,
+        &__imageTwo {
+            padding: 10px;
+        }
+    }
 }
 
 .submitCommentForm {
     display: flex;
     flex-direction: column;
     margin-top: 35px;
-    &__partOne{
+    &__partOne {
         display: flex;
     }
     &__partTwo, 
@@ -128,6 +191,18 @@
     &__commentBox, 
     &__submitButton {
         width: 100%;
+    }
+    @media (max-width: 545px) {
+        &__partOne {
+            flex-direction: column;
+        }
+        &__email {
+            margin-top: 20px;
+        }
+        &__name, 
+        &__email {
+            width: 100%;
+        }
     }
 }
 
