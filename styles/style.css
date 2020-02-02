@@ -615,22 +615,29 @@ h1 {
   display: flex;
 }
 
-.leftSideTop,
-.leftSideBottom {
-  width: 40%;
-  margin-right: 40px;
-}
-
-.rightSideTop,
-.rightSideBottom {
-  width: 60%;
-}
-
 .favouriteTravelDestinations,
 .aboutWillow,
 .recentPosts {
   background-color: white;
   padding: 40px;
+}
+
+.blogMidPortionTopHalf__leftSideTop {
+  width: 40%;
+  margin-right: 40px;
+}
+
+.blogMidPortionTopHalf__rightSideTop {
+  width: 60%;
+}
+
+.blogMidPortionBottomHalf__leftSideBottom {
+  width: 40%;
+  margin-right: 40px;
+}
+
+.blogMidPortionBottomHalf__rightSideBottom {
+  width: 60%;
 }
 
 .favouriteTravelDestinations {
@@ -728,6 +735,10 @@ h1 {
   width: 100%;
 }
 
+.contactFormBody {
+  min-height: 100vh;
+}
+
 .contactHeader {
   background-image: url("../willowAssets/contact-image-1.jpg");
   background-size: cover;
@@ -741,6 +752,89 @@ h1 {
   bottom: -15px;
 }
 
+.mainPortionContact p, .mainPortionContact input, .mainPortionContact textarea {
+  font-size: 1.6rem;
+}
+
 .mainPortionContact {
   background-color: #F6F6F6;
+  padding: 75px 0;
+}
+
+.mainPortionContact__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainPortionContact__leftSide {
+  margin-right: 40px;
+  width: 30%;
+}
+
+.mainPortionContact__rightSide {
+  width: 70%;
+}
+
+.contactInfo {
+  background-color: white;
+  padding: 35px;
+}
+
+.contactInfo__socialList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 175px;
+}
+
+.contactInfo__iconLink {
+  color: #345231;
+  font-size: 2.8rem;
+}
+
+.contactInfo__email {
+  color: #1F1F1F;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.contactInfo__address {
+  margin-top: 10px;
+}
+
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.contactForm__partOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contactForm__partTwo, .contactForm__partThree {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.contactForm__name {
+  margin-right: 15px;
+}
+
+.contactForm__name, .contactForm__email {
+  width: 50%;
+}
+
+.contactForm__messageBox, .contactForm__submitButton {
+  width: 100%;
 }

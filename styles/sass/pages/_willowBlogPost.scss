@@ -20,22 +20,31 @@
     display: flex;
 }
 
-.leftSideTop, 
-.leftSideBottom {
-    width: 40%;
-    margin-right: 40px;
-}
-
-.rightSideTop, 
-.rightSideBottom {
-    width: 60%;
-}
-
 .favouriteTravelDestinations, 
 .aboutWillow, 
 .recentPosts {
     background-color: white;
     padding: 40px;
+}
+
+.blogMidPortionTopHalf {
+    &__leftSideTop {
+        width: 40%;
+        margin-right: 40px;
+    }
+    &__rightSideTop {
+        width: 60%;
+    }
+}
+
+.blogMidPortionBottomHalf {
+    &__leftSideBottom {
+        width: 40%;
+        margin-right: 40px;
+    }
+    &__rightSideBottom {
+        width: 60%;
+    }
 }
 
 .favouriteTravelDestinations {

@@ -1,3 +1,7 @@
+.contactFormBody {
+    min-height: 100vh;
+}
+
 .contactHeader {
     background-image: url('../willowAssets/contact-image-1.jpg');
     background-size: cover;
@@ -10,7 +14,67 @@
     }
 }
 
-.mainPortionContact {
-    background-color: $whiteShade;
+.mainPortionContact p, .mainPortionContact input, .mainPortionContact textarea {
+    font-size: 1.6rem;
 }
 
+.mainPortionContact {
+    background-color: $whiteShade;
+    padding: 75px 0;
+    &__container {
+        display: flex;
+    }
+    &__leftSide {
+        margin-right: 40px;
+        width: 30%;
+    }
+    &__rightSide {
+        width: 70%;
+    }
+}
+
+.contactInfo {
+    background-color: white;
+    padding: 35px;
+    &__socialList {
+        display: flex;
+        justify-content: space-between;
+        width: 175px;
+    }
+    &__iconLink {
+        color: $pine;
+        font-size: 2.8rem;
+    }
+    &__email {
+        color: $black;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    &__address {
+        margin-top: 10px;
+    }
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    &__partOne {
+        display: flex;
+    }
+    &__partTwo, 
+    &__partThree {
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__name {
+        margin-right: 15px;
+    }
+    &__name, 
+    &__email {
+        width: 50%;
+    }
+    &__messageBox, 
+    &__submitButton {
+        width: 100%;
+    }
+}
