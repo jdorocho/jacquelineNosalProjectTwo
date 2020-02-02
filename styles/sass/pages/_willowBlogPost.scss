@@ -1,5 +1,7 @@
 .blogAndNewsHeader {
     background-image: url('../willowAssets/blog-image-1.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 345px 0 0 0;
     &__title {
         color: $whiteShade;
@@ -13,16 +15,19 @@
     background-color: $whiteShade;
 }
 
-.blogmidPortionTopHalf {
+.blogMidPortionTopHalf,
+.blogMidPortionBottomHalf {
     display: flex;
 }
 
-.leftSideTop {
+.leftSideTop, 
+.leftSideBottom {
     width: 40%;
     margin-right: 40px;
 }
 
-.rightSideTop  {
+.rightSideTop, 
+.rightSideBottom {
     width: 60%;
 }
 
@@ -67,5 +72,54 @@
     }
 }
 
+.comments {
+    &__list {
+        margin-top: 35px;
+    }
+    &__itemOne, 
+    &__itemTwo {
+        background-color: white;
+        display: flex;
+    }
+    &__itemTwo {
+        margin-top: 20px;
+        border-bottom: 5px solid $greenGrey;
+    }
+    &__imageOne, 
+    &__imageTwo {
+        width: 20%;
+        padding: 30px;
+    }
+    &__textOne, 
+    &__textTwo {
+        width: 80%;
+        padding: 30px 30px 30px 0;
+    }
+}
+
+.submitCommentForm {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+    &__partOne{
+        display: flex;
+    }
+    &__partTwo, 
+    &__partThree {
+        width: 100%;
+        margin-top: 20px;
+    }
+    &__name {
+        margin-right: 15px;
+    }
+    &__name, 
+    &__email {
+        width: 50%;
+    }
+    &__commentBox, 
+    &__submitButton {
+        width: 100%;
+    }
+}
 
 

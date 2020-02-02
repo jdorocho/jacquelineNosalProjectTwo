@@ -389,6 +389,22 @@ button {
   letter-spacing: 0.1rem;
 }
 
+input,
+textarea {
+  border-style: none;
+  font-size: 2.0rem;
+  padding: 25px 25px 25px 30px;
+  color: #1F1F1F;
+}
+
+textarea {
+  resize: none;
+}
+
+button[type="submit"] {
+  width: 100%;
+}
+
 h1 {
   font-family: 'Abril Fatface', cursive;
   font-size: 15.2rem;
@@ -576,6 +592,8 @@ h1 {
 
 .blogAndNewsHeader {
   background-image: url("../willowAssets/blog-image-1.jpg");
+  background-size: cover;
+  background-position: center;
   padding: 345px 0 0 0;
 }
 
@@ -590,18 +608,21 @@ h1 {
   background-color: #F6F6F6;
 }
 
-.blogmidPortionTopHalf {
+.blogMidPortionTopHalf,
+.blogMidPortionBottomHalf {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.leftSideTop {
+.leftSideTop,
+.leftSideBottom {
   width: 40%;
   margin-right: 40px;
 }
 
-.rightSideTop {
+.rightSideTop,
+.rightSideBottom {
   width: 60%;
 }
 
@@ -647,8 +668,70 @@ h1 {
   vertical-align: middle;
 }
 
+.comments__list {
+  margin-top: 35px;
+}
+
+.comments__itemOne, .comments__itemTwo {
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.comments__itemTwo {
+  margin-top: 20px;
+  border-bottom: 5px solid #709B6B;
+}
+
+.comments__imageOne, .comments__imageTwo {
+  width: 20%;
+  padding: 30px;
+}
+
+.comments__textOne, .comments__textTwo {
+  width: 80%;
+  padding: 30px 30px 30px 0;
+}
+
+.submitCommentForm {
+  margin-top: 35px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.submitCommentForm__partOne {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.submitCommentForm__partTwo, .submitCommentForm__partThree {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.submitCommentForm__name {
+  margin-right: 15px;
+}
+
+.submitCommentForm__name, .submitCommentForm__email {
+  width: 50%;
+}
+
+.submitCommentForm__commentBox, .submitCommentForm__submitButton {
+  width: 100%;
+}
+
 .contactHeader {
   background-image: url("../willowAssets/contact-image-1.jpg");
+  background-size: cover;
+  background-position: center;
   padding: 345px 0 0 0;
 }
 

@@ -47,7 +47,7 @@
 
     <section class="midPortion">
         <div class="wrapper midPortion__wrapper">
-            <div class="blogmidPortionTopHalf">
+            <div class="blogMidPortionTopHalf">
                 <div class="leftSideTop">
                     <!-- ASIDE #1 BEGINS -->
                     <aside class="aboutWillow">
@@ -99,39 +99,50 @@
                 </div>
             </div>
 
-            <!-- COMMENTS SECTION BEGINS -->
-            <section class="comments">
-                <ul class="commentsList">
-                    <li class="commentsList__item commentOne">
-                        <div class="commentsList__image">
-                            <img src="willowAssets/blog-image-3.jpg" alt="person with long brown hair wearing black hat tucking hair behind their ear">
-                        </div>
-                        <div class="commentsList__text">
-                            <p>Tuesday October 9th, 2018 by Barb</p>
-                            <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maescenas eu varius risus, eu aliquet arcu.</p>
-                        </div>
-                    </li>
-                    <li class="commentsList__item commentTwo">
-                        <div class="commentsList__image">
-                            <img src="willowAssets/blog-image-4.jpg" alt="person smiling into the distance">
-                        </div>
-                        <div class="commentsList__text">
-                            <p>Wednesday October 10th, 2018 by Daisy</p>
-                            <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerique ligula. Maescenas eu varius risus eu aliquet arcu.</p>
-                        </div>
-                    </li>
-                </ul>
-                <form action="submit" class="submitCommentForm">
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" placeholder="Name">
-                    <label for="email">Email address</label>
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                    <label for="comment">Comment</label>
-                    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                    <button type="submit">Post comment</button>
-                </form>
-            </section>
-            <!-- COMMENTS SECTION ENDS -->
+            <div class="blogMidPortionBottomHalf">
+                <div class="leftSideBottom"></div>
+                <div class="rightSideBottom">
+                    <!-- COMMENTS SECTION BEGINS -->
+                    <section class="comments">
+                        <ul class="comments__list">
+                            <li class="comments__itemOne">
+                                <div class="comments__imageOne">
+                                    <img src="willowAssets/blog-image-3.jpg" alt="person with long brown hair wearing black hat tucking hair behind their ear">
+                                </div>
+                                <div class="comments__textOne">
+                                    <p>Tuesday October 9th, 2018 by Barb</p>
+                                    <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula. Maescenas eu varius risus, eu aliquet arcu.</p>
+                                </div>
+                            </li>
+                            <li class="comments__itemTwo">
+                                <div class="comments__imageTwo">
+                                    <img src="willowAssets/blog-image-4.jpg" alt="person smiling into the distance">
+                                </div>
+                                <div class="comments__textTwo">
+                                    <p>Wednesday October 10th, 2018 by Daisy</p>
+                                    <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerique ligula. Maescenas eu varius risus eu aliquet arcu.</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <form action="submit" class="submitCommentForm">
+                            <div class="submitCommentForm__partOne">
+                                <label for="name" class="sr-only">Name</label>
+                                <input type="text" name="name" id="name" placeholder="Name" class="submitCommentForm__name">
+                                <label for="email" class="sr-only">Email address</label>
+                                <input type="email" name="email" id="email" placeholder="Email address" class="submitCommentForm__email">
+                            </div>
+                            <div class="submitCommentForm__partTwo">
+                                <label for="comment" class="sr-only">Comment</label>
+                                <textarea rows="9" cols="50" name="comment" id="comment" placeholder="Comment" class="submitCommentForm__commentBox"></textarea>
+                            </div>
+                            <div class="submitCommentForm__partThree">
+                                <button type="submit" class="sumbitCommentForm__submitButton">Post comment</button>
+                            </div>
+                        </form>
+                    </section>
+                    <!-- COMMENTS SECTION ENDS -->
+                </div>
+            </div>
         </div>
     </section>
 

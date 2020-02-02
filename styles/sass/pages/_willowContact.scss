@@ -1,5 +1,7 @@
 .contactHeader {
     background-image: url('../willowAssets/contact-image-1.jpg');
+    background-size: cover;
+    background-position: center;
     padding: 345px 0 0 0;
     &__title {
         color: $whiteShade;
