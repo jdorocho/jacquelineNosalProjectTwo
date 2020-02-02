@@ -3,8 +3,8 @@
 @mixin headingTextBlogAndNewsContactMe {
     font-family: 'Abril Fatface', cursive;
     font-size: 8.0rem;
-    line-height: 9.2rem;
     letter-spacing: 0.1rem;
+    line-height: 9.2rem;
     text-transform: uppercase;
 }
 
@@ -34,19 +34,19 @@
 
 @mixin menuTextHomeAbout {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
     font-size: 2.0rem;
-    text-align: right;
-    line-height: 2.9rem;
+    font-weight: 700;
     letter-spacing: 0.1rem;
+    line-height: 2.9rem;
+    text-align: right;
 }
 
 @mixin buttonText {
     font-family: 'Abril Fatface', cursive;
     font-size: 2.0rem;
-    text-align: center;
-    line-height: 3.2rem;
     letter-spacing: 0.1rem;
+    line-height: 3.2rem;
+    text-align: center;
 }
 
 @mixin bodyText {
