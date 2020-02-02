@@ -1,0 +1,14 @@
+.contactHeader {
+    background-image: url('../willowAssets/contact-image-1.jpg');
+    padding: 345px 0 0 0;
+    &__title {
+        color: $whiteShade;
+        position: relative;
+        bottom: -15px;
+    }
+}
+
+.mainPortionContact {
+    background-color: $whiteShade;
+}
+

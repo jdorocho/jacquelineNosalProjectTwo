@@ -20,8 +20,15 @@
         text-transform: uppercase;
         color: $whiteShade;
     }
-    
-    &__link:not(.willowLogo):hover {
+    &__word {
+        font-family: 'Abril Fatface', cursive;
+        font-size: 3.8rem;
+        text-transform: uppercase;
+        color: $whiteShade;
+        position: relative;
+        top: -5px;
+    }
+    &__link:hover {
             color: $accent;
     }
 }

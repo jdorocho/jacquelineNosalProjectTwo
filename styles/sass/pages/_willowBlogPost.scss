@@ -1,0 +1,71 @@
+.blogAndNewsHeader {
+    background-image: url('../willowAssets/blog-image-1.jpg');
+    padding: 345px 0 0 0;
+    &__title {
+        color: $whiteShade;
+        position: relative;
+        bottom: -15px;
+    }
+}
+
+.midPortion {
+    padding: 85px 0; 
+    background-color: $whiteShade;
+}
+
+.blogmidPortionTopHalf {
+    display: flex;
+}
+
+.leftSideTop {
+    width: 40%;
+    margin-right: 40px;
+}
+
+.rightSideTop  {
+    width: 60%;
+}
+
+.favouriteTravelDestinations, 
+.aboutWillow, 
+.recentPosts {
+    background-color: white;
+    padding: 40px;
+}
+
+.favouriteTravelDestinations {
+    border-bottom: 5px solid $greenGrey;
+    &__title, 
+    &__text {
+        margin-top: 20px;
+    }
+}
+
+.aboutWillow {
+    &__title, 
+    &__text {
+        margin-top: 20px;
+    }
+    &__link {
+        font-weight: 700;
+        color: $greenGrey;
+    }
+}
+
+.recentPosts {
+    margin-top: 20px;
+    &__list {
+        margin-top: 20px;
+    }
+    &__item {
+        list-style: disc;
+        list-style-position: inside;
+    }
+    &__text {
+        display: inline;
+        vertical-align: middle; 
+    }
+}
+
+
+

@@ -241,6 +241,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 ul,
 li {
@@ -339,7 +340,16 @@ img {
   color: #F6F6F6;
 }
 
-.topNavBar__link:not(.willowLogo):hover {
+.topNavBar__word {
+  font-family: 'Abril Fatface', cursive;
+  font-size: 3.8rem;
+  text-transform: uppercase;
+  color: #F6F6F6;
+  position: relative;
+  top: -5px;
+}
+
+.topNavBar__link:hover {
   color: #E4A436;
 }
 
@@ -562,4 +572,92 @@ h1 {
 
 .additionalLinks__box i {
   font-size: 20px;
+}
+
+.blogAndNewsHeader {
+  background-image: url("../willowAssets/blog-image-1.jpg");
+  padding: 345px 0 0 0;
+}
+
+.blogAndNewsHeader__title {
+  color: #F6F6F6;
+  position: relative;
+  bottom: -15px;
+}
+
+.midPortion {
+  padding: 85px 0;
+  background-color: #F6F6F6;
+}
+
+.blogmidPortionTopHalf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.leftSideTop {
+  width: 40%;
+  margin-right: 40px;
+}
+
+.rightSideTop {
+  width: 60%;
+}
+
+.favouriteTravelDestinations,
+.aboutWillow,
+.recentPosts {
+  background-color: white;
+  padding: 40px;
+}
+
+.favouriteTravelDestinations {
+  border-bottom: 5px solid #709B6B;
+}
+
+.favouriteTravelDestinations__title, .favouriteTravelDestinations__text {
+  margin-top: 20px;
+}
+
+.aboutWillow__title, .aboutWillow__text {
+  margin-top: 20px;
+}
+
+.aboutWillow__link {
+  font-weight: 700;
+  color: #709B6B;
+}
+
+.recentPosts {
+  margin-top: 20px;
+}
+
+.recentPosts__list {
+  margin-top: 20px;
+}
+
+.recentPosts__item {
+  list-style: disc;
+  list-style-position: inside;
+}
+
+.recentPosts__text {
+  display: inline;
+  vertical-align: middle;
+}
+
+.contactHeader {
+  background-image: url("../willowAssets/contact-image-1.jpg");
+  padding: 345px 0 0 0;
+}
+
+.contactHeader__title {
+  color: #F6F6F6;
+  position: relative;
+  bottom: -15px;
+}
+
+.mainPortionContact {
+  background-color: #F6F6F6;
 }
