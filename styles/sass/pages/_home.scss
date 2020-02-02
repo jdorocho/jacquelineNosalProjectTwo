@@ -67,27 +67,13 @@ main {
             display: block;
         }
     }
-    @media (max-width: 555px) {
-        padding: 300px 0 200px 0;
-        &__title {
-            font-size: 7.0rem;
-        }
-        &__mainProfileImg {
-            top: -20px;
-        }
-    }
-    @media (max-width: 420px) {
-        &__title {
-            font-size: 5.0rem;
-        }
-        &__title::before {
-            top: 120px;
-        }
-    }
-    @media (max-width: 355px) {
+    @media (max-width: 650px) {
         padding: 300px 0 20px 0;
         &__title {
             font-size: 3.0rem;
+        }
+        &__title::before {
+            top: 120px;
         }
         &__mainProfileImg {
             top: -100px;

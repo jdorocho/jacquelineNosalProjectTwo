@@ -6,8 +6,6 @@
 @import 'abstracts/variables';
 @import 'abstracts/mixins';
 
-// vendors
-
 // base
 @import 'base/setup';
 @import 'base/reset';
@@ -29,5 +27,3 @@
 @import 'pages/home';
 @import 'pages/willowBlogPost';
 @import 'pages/willowContact';
-
-// themes

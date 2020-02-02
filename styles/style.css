@@ -533,33 +533,15 @@ h1 {
   }
 }
 
-@media (max-width: 555px) {
-  .homeHeader {
-    padding: 300px 0 200px 0;
-  }
-  .homeHeader__title {
-    font-size: 7.0rem;
-  }
-  .homeHeader__mainProfileImg {
-    top: -20px;
-  }
-}
-
-@media (max-width: 420px) {
-  .homeHeader__title {
-    font-size: 5.0rem;
-  }
-  .homeHeader__title::before {
-    top: 120px;
-  }
-}
-
-@media (max-width: 355px) {
+@media (max-width: 650px) {
   .homeHeader {
     padding: 300px 0 20px 0;
   }
   .homeHeader__title {
     font-size: 3.0rem;
+  }
+  .homeHeader__title::before {
+    top: 120px;
   }
   .homeHeader__mainProfileImg {
     top: -100px;
