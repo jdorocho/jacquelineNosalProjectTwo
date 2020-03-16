@@ -939,6 +939,8 @@ h1 {
 .aboutWillow__link {
   color: #709B6B;
   font-weight: 700;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .aboutWillow__link:hover {
@@ -1162,6 +1164,8 @@ h1 {
 .contactInfo__iconLink {
   color: #345231;
   font-size: 2.8rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .contactInfo__email {
